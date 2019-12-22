@@ -15,7 +15,7 @@ from keras.layers import Conv2D, MaxPooling2D, BatchNormalization
 from keras.layers import Dense, Dropout, Flatten
 from keras.models import Sequential
 
-from frn.frn import FRN
+from frn import FRN
 
 args_parser = argparse.ArgumentParser('Trainer')
 args_parser.add_argument('--norm', choices=['frn', 'bnorm'], default='frn',

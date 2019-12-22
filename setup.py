@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='frn',
-    version='1.0',
+    version='1.0.1',
     description='Filter Response Normalization Layer: Eliminating '
                 'Batch Dependence in the Training of Deep Neural Networks',
     author='Philippe Remy',
@@ -11,9 +11,9 @@ setup(
     long_description=open('README.md').read(),
     packages=['frn'],
     install_requires=[
-        'numpy==1.16.2',
-        'keras',
+        'keras>=2.*',
         'tensorflow>=2.*'
+        'numpy>=1.16.2',
         'gast==0.2.2'
     ]
 )
